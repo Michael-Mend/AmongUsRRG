@@ -1,0 +1,33 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(5, 0, 14) 100%);
+    color: rgb(238, 238, 238);
+}
+
+img {
+    height: 300px;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+button:hover {
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 60px;
+}
+
+.main {
+    text-align: center;
+    margin-top: 6%;
+}
