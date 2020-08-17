@@ -15,7 +15,7 @@
         <div>
             <button onclick="roll()">roll</button>
             <h2 id='roll'></h2>
-            <p></p>
+            <p id='rule'></p>
         </div>
     </div>
 </body>
@@ -25,6 +25,13 @@
     function roll() {
         let roll = roles[Math.floor(Math.random() * 15)]
         document.getElementById('roll').innerHTML = roll;
+        if (roll === 'mute') {
+            document.getElementById('rule').innerHTML = 'listen but no speaking'
+        } else if (roll === 'deaf') {
+            document.getElementById('rule').innerHTML = 'speak but no listening'
+        } else {
+            document.getElementById('rule').innerHTML = ''
+        }
     };
 </script>
 </html>

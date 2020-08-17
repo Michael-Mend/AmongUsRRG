@@ -17,6 +17,12 @@ button {
     font-family: 'Roboto Mono', monospace;
 }
 
+p {
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
 button:hover {
     border-bottom: solid;
     border-width: 1px;
