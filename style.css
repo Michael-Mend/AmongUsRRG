@@ -1,7 +1,7 @@
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(5, 0, 14) 100%);
-    color: rgb(238, 238, 238);
+    background: rgb(1,6,27);
+    background: linear-gradient(90deg, rgb(0, 3, 14) 0%, rgba(0,0,0,1) 100%);
+    color: white;
 }
 
 img {
