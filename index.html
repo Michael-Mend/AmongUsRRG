@@ -7,23 +7,25 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css">
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="main">
+    <div id="main" class="vov fade-in-down slow">
         <img src='logo.png'>
         <div>
             <button onclick="roll()">roll</button>
-            <h2 id='roll'></h2>
-            <p id='rule'></p>
+            <div class='vov fade-in slowest'>
+                <h2 id='roll'></h2>
+                <p id='rule'></p>
+            </div>
         </div>
     </div>
 </body>
 <script>
-    const roles = ['sleepy janitor','deaf','mute', 'P.E. teacher', 'foreign guy', 'christopher walken', 'flat earther', 'sykkuno', 'tyler1', 'xQc', 'Danny Phantom', 'crooked cop', 'arnold schwartzenegger', 'gilbert godfrey', 'rusty rick', 'mobster']
+    const roles = ['sleepy janitor','deaf','mute', 'P.E. teacher', 'foreign guy', 'christopher walken', 'flat earther', 'tyler1', 'xQc', 'danny phantom', 'crooked cop', 'arnold schwartzenegger', 'gilbert godfrey', 'rusty rick', 'mobster']
 
     function roll() {
-        let roll = roles[Math.floor(Math.random() * 15)]
+        let roll = roles[Math.floor(Math.random() * 14)]
         document.getElementById('roll').innerHTML = roll;
         if (roll === 'mute') {
             document.getElementById('rule').innerHTML = 'listen but no speaking'
