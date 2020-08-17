@@ -15,6 +15,9 @@ button {
     color: white;
     font-size: 30px;
     font-family: 'Roboto Mono', monospace;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: transparent;
 }
 
 p {
@@ -24,8 +27,7 @@ p {
 }
 
 button:hover {
-    border-bottom: solid;
-    border-width: 1px;
+    border-color: white;
 }
 
 h2 {
